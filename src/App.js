@@ -11,19 +11,17 @@ class App extends Component {
         <Lightbox />
         <div className="row">
           <div className="content col-xs-12 col-sm-10 col-sm-offset-1">
-            <Profile image="images/profile_pic.png" name="Alexander D. Brown" title="B.S. Computer Science" >
-              <a href="mailto:alexanderdouglasbrown@gmail.com"><i className="fa fa-envelope" aria-hidden="true"></i> alexanderdouglasbrown@gmail.com</a>
-              <br />
-              <a href="https://drive.google.com/open?id=0B30hQOEKn_sUWFViRXkzY0tUb2s"><i className="fa fa-file" aria-hidden="true"></i> Resume</a>
-              <span className="smallGap"></span>
-              <a href="https://github.com/alexanderdouglasbrown"><i className="fa fa-github" aria-hidden="true"></i> GitHub</a>
-              <span className="smallGap"></span>
-              <a href="https://www.linkedin.com/in/alexanderdouglasbrown/"><i className="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
-              <div className="profile-text">
-                Hi, my name is Alex. I'm passionate about computers and technology, and have been programming, building, and repairing computers for as long as I can remember.
-                I have a Bachelor of Science in Computer Science from San Francisco State University, and an Associate in Science in CIS Desktop Networking from College of Marin.
-                Below are some of my programming projects.
-                    </div>
+            <Profile image="images/profile_pic.png"
+              name="Alexander D. Brown"
+              title="B.S. Computer Science"
+              email="alexanderdouglasbrown@gmail.com"
+              resume="https://drive.google.com/open?id=0B30hQOEKn_sUWFViRXkzY0tUb2s"
+              github="https://github.com/alexanderdouglasbrown"
+              linkedin="https://www.linkedin.com/in/alexanderdouglasbrown/"
+            >
+              Hi, my name is Alex. I'm passionate about computers and technology, and have been programming, building, and repairing computers for as long as I can remember.
+              I have a Bachelor of Science in Computer Science from San Francisco State University, and an Associate in Science in CIS Desktop Networking from College of Marin.
+              Below are some of my programming projects.
             </Profile>
             <Project
               image="images/frend_chat.png"
