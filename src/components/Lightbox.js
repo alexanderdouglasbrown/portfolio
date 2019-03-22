@@ -2,19 +2,13 @@ import React from "react"
 import "./Lightbox.css"
 
 class Lightbox extends React.Component {
-    constructor() {
-        super();
-
-        this.state = {
-            showLightbox: false,
-            image: ""
-        }
-    }
-
     render() {
         return (
-            <div id="lightbox">
-                <img src="https://via.placeholder.com/450" alt={this.props.alt || ""} />
+            <div
+                id="lightbox"
+                className={this.props.showLightbox === null ? "" : (this.props.showLightbox ? "show-lightbox" : "hide-lightbox")}
+                onClick={this.props.hideLightboxCallback}>
+                <img src={this.props.image} alt="" />
             </div>
         )
     }

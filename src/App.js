@@ -5,10 +5,33 @@ import Profile from './components/Profile'
 import Project from './components/Project'
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      lightboxImageSource: "",
+      showLightbox: null
+    }
+  }
+
+  hideLightbox = () => {
+    this.setState({
+      showLightbox: false
+    })
+  }
+
+  showLightbox = (imageSource) => {
+    this.setState({
+      lightboxImageSource: imageSource,
+      showLightbox: true
+    })
+  }
+
   render() {
     return (
       <div>
-        <Lightbox />
+        <Lightbox image={this.state.lightboxImageSource}
+        showLightbox={this.state.showLightbox}
+        hideLightboxCallback={this.hideLightbox}/>
         <div className="container">
           <div className="row">
             <div className="content col-xs-12 col-sm-10 col-sm-offset-1">
@@ -23,8 +46,9 @@ class App extends Component {
                 Hi, my name is Alex. I'm passionate about computers and technology, and have been programming, building, and repairing computers for as long as I can remember.
                 I have a Bachelor of Science in Computer Science from San Francisco State University, and an Associate in Science in CIS Desktop Networking from College of Marin.
                 Below are some of my programming projects.
-            </Profile>
+                </Profile>
               <Project
+                showLightboxCallback={this.showLightbox}
                 image="images/frend_chat.png"
                 title="Frend Chat"
                 description="A chat room to connect you and your &quot;frends&quot;"
@@ -33,8 +57,9 @@ class App extends Component {
               >
                 A chat app made in Java and JavaFX, and a personal project of mine. It connects to a server, <a href="https://github.com/alexanderdouglasbrown/FrendServer">Frend Server</a>,
                 which is written in C++. Frend Server uses SQLite to store user credentials, while passwords are salted and hashed with SHA256.
-                    </Project>
+                </Project>
               <Project
+                showLightboxCallback={this.showLightbox}
                 image="images/image_splash.png"
                 title="Image Splash"
                 description="An image sharing website"
@@ -44,6 +69,7 @@ class App extends Component {
                 A personal project website for sharing images and leaving comments. Built with Node.js, Express, and MongoDB.
                     </Project>
               <Project
+                showLightboxCallback={this.showLightbox}
                 image="images/fruit_valley.png"
                 title="Fruit Valley"
                 description="A match-3 puzzle game made in Javascript"
@@ -54,6 +80,7 @@ class App extends Component {
                 which handles the game loop and scales the screen to fit the browser window.
                     </Project>
               <Project
+                showLightboxCallback={this.showLightbox}
                 image="images/where_weather.jpg"
                 title="Where Weather"
                 description="An iOS app that lets you see the weather anywhere in the world"
@@ -64,6 +91,7 @@ class App extends Component {
                 weather conditions anywhere in the world.
                     </Project>
               <Project
+                showLightboxCallback={this.showLightbox}
                 image="images/sketchy.png"
                 title="Sketchy"
                 description="An online multiplayer Javascript Pictionary game"
@@ -75,6 +103,7 @@ class App extends Component {
                 I also worked on the client and server game logic, including assigning the host player, scanning the chat room for correct guesses, etc.
                     </Project>
               <Project
+                showLightboxCallback={this.showLightbox}
                 image="images/amos.png"
                 title="Absolutely Mandatory OS"
                 description="A simulated OS made in Javascript"
@@ -85,6 +114,7 @@ class App extends Component {
                 I also built commands such as cat, man, and sort.
                     </Project>
               <Project
+                showLightboxCallback={this.showLightbox}
                 image="images/fud5.png"
                 title="FüD5"
                 description="An Android Java restaurant recommendation app"
