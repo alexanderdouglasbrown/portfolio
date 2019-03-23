@@ -2,7 +2,7 @@
   "name": "new-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexanderdouglasbrown.github.io/portfolio/",
+  "homepage": "https://alexanderdouglasbrown.com",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.2",
