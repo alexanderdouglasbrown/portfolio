@@ -8,12 +8,9 @@
 
 .profile-pic {
     margin-top: 20px;
+    border-radius: 50%;
 }
 
 .profile-text {
-    margin-top: 20px;
-}
-
-.project-image {
     margin-top: 20px;
 }

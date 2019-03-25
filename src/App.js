@@ -35,7 +35,7 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="content col-xs-12 col-sm-10 col-sm-offset-1">
-              <Profile image="images/profile_pic.png"
+              <Profile image="images/profile_pic.jpg"
                 name="Alexander D. Brown"
                 title="B.S. Computer Science"
                 email="alexanderdouglasbrown@gmail.com"
