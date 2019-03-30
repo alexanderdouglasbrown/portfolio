@@ -1,37 +1,40 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import Lightbox from './components/Lightbox'
 import Profile from './components/Profile'
 import Project from './components/Project'
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props)
     this.state = {
       lightboxImageSource: "",
       showLightbox: null
     }
+
+    this.hideLightbox = this.hideLightbox.bind(this)
+    this.showLightbox = this.showLightbox.bind(this)
   }
 
-  hideLightbox = () => {
-    this.setState({
+  hideLightbox() {
+    this.setState(() => ({
       showLightbox: false
-    })
+    }))
   }
 
-  showLightbox = (imageSource) => {
-    this.setState({
+  showLightbox(imageSource) {
+    this.setState(() => ({
       lightboxImageSource: imageSource,
       showLightbox: true
-    })
+    }))
   }
 
   render() {
     return (
       <div>
         <Lightbox image={this.state.lightboxImageSource}
-        showLightbox={this.state.showLightbox}
-        hideLightboxCallback={this.hideLightbox}/>
+          showLightbox={this.state.showLightbox}
+          hideLightboxCallback={this.hideLightbox} />
         <div className="container">
           <div className="row">
             <div className="content col-xs-12 col-sm-10 col-sm-offset-1">
@@ -127,8 +130,8 @@ class App extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
