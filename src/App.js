@@ -5,24 +5,18 @@ import Profile from './components/Profile'
 import Project from './components/Project'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      lightboxImageSource: "",
-      showLightbox: null
-    }
-
-    this.hideLightbox = this.hideLightbox.bind(this)
-    this.showLightbox = this.showLightbox.bind(this)
+  state = {
+    lightboxImageSource: "",
+    showLightbox: null
   }
 
-  hideLightbox() {
+  hideLightbox = ()=> {
     this.setState(() => ({
       showLightbox: false
     }))
   }
 
-  showLightbox(imageSource) {
+  showLightbox = (imageSource) => {
     this.setState(() => ({
       lightboxImageSource: imageSource,
       showLightbox: true
