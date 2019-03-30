@@ -1,7 +1,7 @@
 import React from "react"
 import "./Lightbox.css"
 
-export default (props) => {
+const Lightbox = (props) => {
     return (
         <div
             id="lightbox"
@@ -11,3 +11,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Lightbox

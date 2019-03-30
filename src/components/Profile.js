@@ -1,7 +1,7 @@
 import React from "react"
 import './Profile.css'
 
-export default (props) => {
+const Profile = (props) => {
     return (
         <div className="row profile">
             <div className="col-sm-4 col-xs-12">
@@ -25,3 +25,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Profile

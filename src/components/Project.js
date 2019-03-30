@@ -2,7 +2,7 @@ import React from "react"
 import GitLink from "./GitLink"
 import "./Project.css"
 
-export default (props) => {
+const Project = (props) => {
     return (
         <div className="row project">
             <div className="col-sm-4 col-xs-12">
@@ -22,3 +22,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Project
