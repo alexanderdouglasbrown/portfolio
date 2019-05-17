@@ -7,7 +7,7 @@ import Project from './components/Project'
 class App extends Component {
   state = {
     lightboxImageSource: "",
-    lightboxSourceType: "",
+    lightboxVideoSource: "",
     showLightbox: null
   }
 
@@ -17,10 +17,10 @@ class App extends Component {
     }))
   }
 
-  showLightbox = (imageSource, sourceType) => {
+  showLightbox = (imageSource, videoSource) => {
     this.setState(() => ({
       lightboxImageSource: imageSource,
-      lightboxSourceType: sourceType,
+      lightboxVideoSource: videoSource,
       showLightbox: true
     }))
   }
@@ -28,15 +28,16 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Lightbox image={this.state.lightboxImageSource}
+        <Lightbox
+          image={this.state.lightboxImageSource}
+          video={this.state.lightboxVideoSource}
           showLightbox={this.state.showLightbox}
-          lightboxSourceType={this.state.lightboxSourceType}
           hideLightboxCallback={this.hideLightbox}
         />
         <div className="container">
           <div className="row">
             <div className="content col-xs-12 col-sm-10 col-sm-offset-1">
-              <Profile image="images/profile_pic.jpg"
+              <Profile image="images/profile-pic.jpg"
                 name="Alexander D. Brown"
                 title="B.S. Computer Science"
                 email="alexanderdouglasbrown@gmail.com"
@@ -50,7 +51,7 @@ class App extends Component {
                 </Profile>
               <Project
                 showLightboxCallback={this.showLightbox}
-                image="images/frend_chat.png"
+                image="images/frend-chat.png"
                 title="Frend Chat"
                 description="A chat room to connect you and your &quot;frends&quot;"
                 url="https://github.com/alexanderdouglasbrown/FrendChat/releases"
@@ -61,7 +62,7 @@ class App extends Component {
                 </Project>
               <Project
                 showLightboxCallback={this.showLightbox}
-                image="images/image_splash.png"
+                image="images/image-splash.png"
                 title="Image Splash"
                 description="An image sharing website"
                 url="http://www.imagesplash.cool/"
@@ -71,7 +72,7 @@ class App extends Component {
                     </Project>
               <Project
                 showLightboxCallback={this.showLightbox}
-                image="images/fruit_valley.png"
+                image="images/fruit-valley.png"
                 title="Fruit Valley"
                 description="A match-3 puzzle game made in Javascript"
                 url="https://alexanderdouglasbrown.github.io/Fruit-Valley/"
@@ -82,7 +83,8 @@ class App extends Component {
                     </Project>
               <Project
                 showLightboxCallback={this.showLightbox}
-                image="images/where_weather.jpg"
+                image="images/where-weather.jpg"
+                video="videos/where-weather.mp4"
                 title="Where Weather"
                 description="An iOS app that lets you see the weather anywhere in the world"
                 giturl="https://github.com/alexanderdouglasbrown/Where-Weather"
