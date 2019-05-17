@@ -52,6 +52,7 @@ class App extends Component {
               <Project
                 showLightboxCallback={this.showLightbox}
                 image="images/frend-chat.png"
+                video="videos/frend-chat.mp4"
                 title="Frend Chat"
                 description="A chat room to connect you and your &quot;frends&quot;"
                 url="https://github.com/alexanderdouglasbrown/FrendChat/releases"
