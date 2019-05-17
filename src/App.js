@@ -110,16 +110,6 @@ class App extends Component {
                     </Project>
               <Project
                 showLightboxCallback={this.showLightbox}
-                image="images/fud5.png"
-                title="FüD5"
-                description="An Android Java restaurant recommendation app"
-                giturl="https://github.com/alexanderdouglasbrown/FUD5"
-              >
-                Built in my Software Development class, where I was a team lead in an agile work environment.
-                I designed and implemented the UI.
-                    </Project>
-              <Project
-                showLightboxCallback={this.showLightbox}
                 image="images/capone.jpg"
                 video="videos/capone.mp4"
                 title="Capone Behind Bars at Alcatraz"
