@@ -74,6 +74,7 @@ class App extends Component {
               <Project
                 showLightboxCallback={this.showLightbox}
                 image="images/fruit-valley.png"
+                video="videos/fruit-valley.mp4"
                 title="Fruit Valley"
                 description="A match-3 puzzle game made in Javascript"
                 url="https://alexanderdouglasbrown.github.io/Fruit-Valley/"
