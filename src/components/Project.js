@@ -8,7 +8,9 @@ const Project = props =>
             <img
                 className="img-thumbnail img-responsive project-image"
                 alt="" src={props.image}
-                onClick={() => props.showLightboxCallback(props.image)}
+                onClick={() => {
+                    props.video ? props.showLightboxCallback(props.video, "video") : props.showLightboxCallback(props.image, "image")
+                }}
                 style={{ cursor: "pointer" }}
             />
         </div>

@@ -7,7 +7,7 @@
     visibility: hidden;
 }
 
-#lightbox img{
+#lightbox img, #lightbox video{
     display: block;
     position: absolute;
     top: 50%;

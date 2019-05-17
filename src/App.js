@@ -7,18 +7,20 @@ import Project from './components/Project'
 class App extends Component {
   state = {
     lightboxImageSource: "",
+    lightboxSourceType: "",
     showLightbox: null
   }
 
-  hideLightbox = ()=> {
+  hideLightbox = () => {
     this.setState(() => ({
       showLightbox: false
     }))
   }
 
-  showLightbox = (imageSource) => {
+  showLightbox = (imageSource, sourceType) => {
     this.setState(() => ({
       lightboxImageSource: imageSource,
+      lightboxSourceType: sourceType,
       showLightbox: true
     }))
   }
@@ -28,7 +30,9 @@ class App extends Component {
       <div>
         <Lightbox image={this.state.lightboxImageSource}
           showLightbox={this.state.showLightbox}
-          hideLightboxCallback={this.hideLightbox} />
+          lightboxSourceType={this.state.lightboxSourceType}
+          hideLightboxCallback={this.hideLightbox}
+        />
         <div className="container">
           <div className="row">
             <div className="content col-xs-12 col-sm-10 col-sm-offset-1">
@@ -95,20 +99,9 @@ class App extends Component {
                 url="http://csc667.herokuapp.com/"
                 giturl="https://github.com/alexanderdouglasbrown/Sketchy"
               >
-                Built in my Internet Application Design and Development class using Node.js, Express, jQuery and Socket.IO.
-                I worked on building the art pad, which keeps packet sizes small by storing and sending the artist's mouse movements to other players.
+                Built in my Internet Application Design and Development class using Node.js with Socket.IO.
+                I worked on building the drawing pad, which keeps packet sizes small by sending the artist's mouse movements to other players.
                 I also worked on the client and server game logic, including assigning the host player, scanning the chat room for correct guesses, etc.
-                    </Project>
-              <Project
-                showLightboxCallback={this.showLightbox}
-                image="images/amos.png"
-                title="Absolutely Mandatory OS"
-                description="A simulated OS made in Javascript"
-                url="https://alexanderdouglasbrown.github.io/ABSOLUTELY_MANDATORY_OS/AMOS.html"
-                giturl="https://github.com/alexanderdouglasbrown/ABSOLUTELY_MANDATORY_OS"
-              >
-                Built in my Operating System Principals class. I made the command line, which accepts user commands, supports piping, and saves input history.
-                I also built commands such as cat, man, and sort.
                     </Project>
               <Project
                 showLightboxCallback={this.showLightbox}
@@ -120,6 +113,16 @@ class App extends Component {
                 Built in my Software Development class, where I was a team lead in an agile work environment.
                 I designed and implemented the UI.
                     </Project>
+              <Project
+                showLightboxCallback={this.showLightbox}
+                image="images/capone.jpg"
+                video="videos/capone.mp4"
+                title="Capone Behind Bars at Alcatraz"
+                description="An iOS detailing Al Capone's time spent in Alcatraz"
+                giturl="https://github.com/alexanderdouglasbrown/Capone-Behind-Bars-at-Alcatraz"
+              >
+                An iOS app I made for my family's business before entering my Computer Science degree program.
+                </Project>
             </div>
           </div>
         </div>
