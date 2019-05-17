@@ -51,6 +51,17 @@ class App extends Component {
                 </Profile>
               <Project
                 showLightboxCallback={this.showLightbox}
+                image="images/image-splash.png"
+                video="videos/image-splash.mp4"
+                title="Image Splash"
+                description="An image sharing website"
+                url="http://www.imagesplash.cool/"
+                giturl="https://github.com/alexanderdouglasbrown/ImageSplash"
+              >
+                A personal project website for sharing images and leaving comments. Built with Node.js, Express, and MongoDB.
+                    </Project>
+              <Project
+                showLightboxCallback={this.showLightbox}
                 image="images/frend-chat.png"
                 video="videos/frend-chat.mp4"
                 title="Frend Chat"
@@ -61,16 +72,6 @@ class App extends Component {
                 A chat app made in Java and JavaFX, and a personal project of mine. It connects to a server, <a href="https://github.com/alexanderdouglasbrown/FrendServer">Frend Server</a>,
                 which is written in C++. Frend Server uses SQLite to store user credentials, while passwords are salted and hashed with SHA256.
                 </Project>
-              <Project
-                showLightboxCallback={this.showLightbox}
-                image="images/image-splash.png"
-                title="Image Splash"
-                description="An image sharing website"
-                url="http://www.imagesplash.cool/"
-                giturl="https://github.com/alexanderdouglasbrown/ImageSplash"
-              >
-                A personal project website for sharing images and leaving comments. Built with Node.js, Express, and MongoDB.
-                    </Project>
               <Project
                 showLightboxCallback={this.showLightbox}
                 image="images/fruit-valley.png"
