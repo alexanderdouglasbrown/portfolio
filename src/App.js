@@ -99,6 +99,7 @@ class App extends Component {
               <Project
                 showLightboxCallback={this.showLightbox}
                 image="images/sketchy.png"
+                video="videos/sketchy.mp4"
                 title="Sketchy"
                 description="An online multiplayer Javascript Pictionary game"
                 url="http://csc667.herokuapp.com/"
