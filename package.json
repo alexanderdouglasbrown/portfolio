@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://alexanderdouglasbrown.com",
   "dependencies": {
-    "gh-pages": "^2.0.1",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-scripts": "^2.1.8"
+    "gh-pages": "^2.1.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
