@@ -1,4 +1,8 @@
 import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+
 import './Profile.css'
 
 const Profile = props =>
@@ -9,13 +13,15 @@ const Profile = props =>
         <div className="col-sm-8 col-xs-12">
             <h2>{props.name}
                 <small><br />{props.title}</small></h2>
-            <a href={`mailto:${props.email}`}><i className="fa fa-envelope" aria-hidden="true"></i> alexanderdouglasbrown@gmail.com</a>
+            <a href={`mailto:${props.email}`}><FontAwesomeIcon icon={faEnvelope} />&nbsp;alexanderdouglasbrown@gmail.com</a>
             <br />
-            <a href={props.resume}><i className="fa fa-file" aria-hidden="true"></i> Resume</a>
+            <a href={props.resume}><FontAwesomeIcon icon={faFile} />&nbsp;Resume</a>
             <span className="smallGap"></span>
-            <a href={props.github}><i className="fa fa-github" aria-hidden="true"></i> GitHub</a>
+            <a href={props.github}><FontAwesomeIcon icon={faGithub} />&nbsp;GitHub</a>
             <span className="smallGap"></span>
-            <a href={props.linkedin}><i className="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+            <a href={props.linkedin}><FontAwesomeIcon icon={faLinkedin} />&nbsp;LinkedIn</a>
+            <span className="smallGap"></span>
+            <a href={props.instagram}><FontAwesomeIcon icon={faInstagram} />&nbsp;Instagram</a>
             <br />
             <div className="profile-text">
                 {props.children}
