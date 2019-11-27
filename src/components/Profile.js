@@ -12,17 +12,24 @@ const Profile = props =>
         </div>
         <div className="col-sm-8 col-xs-12">
             <h2>{props.name}
-                <small><br />{props.title}</small></h2>
-            <a href={`mailto:${props.email}`}><FontAwesomeIcon icon={faEnvelope} />&nbsp;alexanderdouglasbrown@gmail.com</a>
-            <br />
-            <a href={props.resume}><FontAwesomeIcon icon={faFile} />&nbsp;Resume</a>
-            <span className="smallGap"></span>
-            <a href={props.github}><FontAwesomeIcon icon={faGithub} />&nbsp;GitHub</a>
-            <span className="smallGap"></span>
-            <a href={props.linkedin}><FontAwesomeIcon icon={faLinkedin} />&nbsp;LinkedIn</a>
-            <span className="smallGap"></span>
-            <a href={props.instagram}><FontAwesomeIcon icon={faInstagram} />&nbsp;Instagram</a>
-            <br />
+                <br /><small>{props.title}</small></h2>
+            <div className="row">
+                <div className="col-xs-12">
+                    <a href={`mailto:${props.email}`}><FontAwesomeIcon icon={faEnvelope} />&nbsp;alexanderdouglasbrown@gmail.com</a>
+                </div>
+                <div className="col-xs-6 col-md-3">
+                    <a href={props.resume}><FontAwesomeIcon icon={faFile} />&nbsp;Resume</a>
+                </div>
+                <div className="col-xs-6 col-md-3">
+                    <a href={props.github}><FontAwesomeIcon icon={faGithub} />&nbsp;GitHub</a>
+                </div>
+                <div className="col-xs-6 col-md-3">
+                    <a href={props.linkedin}><FontAwesomeIcon icon={faLinkedin} />&nbsp;LinkedIn</a>
+                </div>
+                <div className="col-xs-6 col-md-3">
+                    <a href={props.instagram}><FontAwesomeIcon icon={faInstagram} />&nbsp;Instagram</a>
+                </div>
+            </div>
             <div className="profile-text">
                 {props.children}
             </div>
