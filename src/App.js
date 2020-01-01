@@ -45,6 +45,14 @@ const App = props => {
                 </Profile>
             <Project
               showLightboxCallback={showLightbox}
+              title="Word Hole"
+              image="images/word-hole.png"
+              description="A site for sharing words on the internet!"
+              url="https://wordhole.net"
+              giturl="https://github.com/alexanderdouglasbrown/Word-Hole"
+            >A personal project website for posting your thoughts, links, whatever, and leaving comments. Build with React, ASP .NET Core, and PostgreSQL. <a href="https://github.com/alexanderdouglasbrown/Word-Hole-API">(API Server Github Link)</a></Project>
+            <Project
+              showLightboxCallback={showLightbox}
               image="images/image-splash.png"
               video="videos/image-splash.mp4"
               title="Image Splash"
@@ -103,16 +111,6 @@ const App = props => {
               I worked on building the drawing pad, which keeps packet sizes small by sending the artist's mouse movements to other players.
               I also worked on the client and server game logic, including assigning the host player, scanning the chat room for correct guesses, etc.
                     </Project>
-            <Project
-              showLightboxCallback={showLightbox}
-              image="images/capone.jpg"
-              video="videos/capone.mp4"
-              title="Capone Behind Bars at Alcatraz"
-              description="An iOS detailing Al Capone's time spent in Alcatraz"
-              giturl="https://github.com/alexanderdouglasbrown/Capone-Behind-Bars-at-Alcatraz"
-            >
-              An iOS app I made for my family's business before entering my Computer Science degree program.
-                </Project>
           </div>
         </div>
       </div>
