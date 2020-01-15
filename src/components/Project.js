@@ -1,5 +1,7 @@
 import React from "react"
 import GitLink from "./GitLink"
+import ServerLink from './ServerLink'
+
 import "./Project.css"
 
 const Project = props =>
@@ -16,7 +18,8 @@ const Project = props =>
         </div>
         <div className="col-sm-8 col-xs-12">
             <h3>{props.url != null ? (<a href={props.url}>{props.title}</a>) : (<span>{props.title}</span>)}
-                {props.giturl != null ? <GitLink url={props.giturl} /> : null}
+                {props.giturl && <GitLink url={props.giturl} />}
+                {props.serverurl && <ServerLink url={props.serverurl} />}
                 <small><br />{props.description}</small></h3>
             {props.children}
         </div>

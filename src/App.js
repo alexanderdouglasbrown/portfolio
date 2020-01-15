@@ -42,15 +42,17 @@ const App = props => {
               Hi, my name is Alex. I'm passionate about computers and technology, and have been programming, building, and repairing computers for as long as I can remember.
               I have a Bachelor of Science in Computer Science from San Francisco State University, and an Associate in Science in CIS Desktop Networking from College of Marin.
               Below are some of my programming projects.
-                </Profile>
+              </Profile>
             <Project
               showLightboxCallback={showLightbox}
               title="Word Hole"
               image="images/word-hole.png"
-              description="A site for sharing words on the internet!"
+              description="A site for sharing your words on the internet!"
               url="https://wordhole.net"
               giturl="https://github.com/alexanderdouglasbrown/Word-Hole"
-            >A personal project website for posting your thoughts, links, whatever, and leaving comments. Build with React, ASP .NET Core, and PostgreSQL. <a href="https://github.com/alexanderdouglasbrown/Word-Hole-API">(API Server Github Link)</a></Project>
+              serverurl="https://github.com/alexanderdouglasbrown/Word-Hole-API"
+            >A website for posting your thoughts, links, whatever, and leaving comments. Built with React, ASP .NET Core, and PostgreSQL.
+            </Project>
             <Project
               showLightboxCallback={showLightbox}
               image="images/image-splash.png"
@@ -60,8 +62,8 @@ const App = props => {
               url="http://www.imagesplash.cool/"
               giturl="https://github.com/alexanderdouglasbrown/ImageSplash"
             >
-              A personal project website for sharing images and leaving comments. Built with Node.js, Express, and MongoDB.
-                    </Project>
+              A website for sharing images and leaving comments. Built with Node.js, Express, and MongoDB.
+              </Project>
             <Project
               showLightboxCallback={showLightbox}
               image="images/frend-chat.png"
@@ -70,22 +72,23 @@ const App = props => {
               description="A chat room to connect you and your &quot;frends&quot;"
               url="https://github.com/alexanderdouglasbrown/FrendChat/releases"
               giturl="https://github.com/alexanderdouglasbrown/FrendChat"
+              serverurl="https://github.com/alexanderdouglasbrown/FrendServer"
             >
-              A chat app made in Java and JavaFX, and a personal project of mine. It connects to a server, <a href="https://github.com/alexanderdouglasbrown/FrendServer">Frend Server</a>,
-              which is written in C++. Frend Server uses SQLite to store user credentials, while passwords are salted and hashed with SHA256.
-                </Project>
+              A chat app made in Java and JavaFX. It connects to Frend Server, which is written in C++.
+              Frend Server uses SQLite to store user credentials, while passwords are salted and hashed with SHA256.
+              </Project>
             <Project
               showLightboxCallback={showLightbox}
               image="images/fruit-valley.png"
               video="videos/fruit-valley.mp4"
               title="Fruit Valley"
-              description="A match-3 puzzle game made in Javascript"
+              description="A Match 3 puzzle game made in Javascript"
               url="https://alexanderdouglasbrown.github.io/Fruit-Valley/"
               giturl="https://github.com/alexanderdouglasbrown/Fruit-Valley"
             >
-              A personal project of mine. Built with another of my projects, <a href="https://github.com/alexanderdouglasbrown/JSGamework">JSGamework</a>,
+              A Match 3 puzzle browser game. Built with another of my projects, <a href="https://github.com/alexanderdouglasbrown/JSGamework">JSGamework</a>,
               which handles the game loop and scales the screen to fit the browser window.
-                    </Project>
+              </Project>
             <Project
               showLightboxCallback={showLightbox}
               image="images/where-weather.jpg"
@@ -94,10 +97,10 @@ const App = props => {
               description="An iOS app that lets you see the weather anywhere in the world"
               giturl="https://github.com/alexanderdouglasbrown/Where-Weather"
             >
-              A personal project built in Swift. The user presses and holds a spot on the world map
+              An iOS weather app built in Swift. The user presses and holds a spot on the world map,
               and, using Apple's MapKit and data from OpenWeatherMap.org, Where Weather displays temperature and
               weather conditions anywhere in the world.
-                    </Project>
+              </Project>
             <Project
               showLightboxCallback={showLightbox}
               image="images/sketchy.png"
@@ -108,9 +111,9 @@ const App = props => {
               giturl="https://github.com/alexanderdouglasbrown/Sketchy"
             >
               Built in my Internet Application Design and Development class using Node.js with Socket.IO.
-              I worked on building the drawing pad, which keeps packet sizes small by sending the artist's mouse movements to other players.
+              I made the drawing pad, which keeps packet sizes small by sending the artist's mouse movements to other players.
               I also worked on the client and server game logic, including assigning the host player, scanning the chat room for correct guesses, etc.
-                    </Project>
+              </Project>
           </div>
         </div>
       </div>

@@ -15,7 +15,9 @@ const Profile = props =>
                 <br /><small>{props.title}</small></h2>
             <div className="row">
                 <div className="col-xs-12">
-                    <a href={`mailto:${props.email}`}><FontAwesomeIcon icon={faEnvelope} />&nbsp;alexanderdouglasbrown@gmail.com</a>
+                    <div style={{ whiteSpace: "nowrap", overflowX: "hidden" }}>
+                        <a href={`mailto:${props.email}`}><FontAwesomeIcon icon={faEnvelope} />&nbsp;alexanderdouglasbrown@gmail.com</a>
+                    </div>
                 </div>
                 <div className="col-xs-6 col-md-3">
                     <a href={props.resume}><FontAwesomeIcon icon={faFile} />&nbsp;Resume</a>
