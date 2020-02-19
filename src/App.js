@@ -47,11 +47,13 @@ const App = props => {
               showLightboxCallback={showLightbox}
               title="Word Hole"
               image="images/word-hole.png"
+              video="videos/word-hole.mp4"
               description="A site for sharing your words on the internet!"
               url="https://wordhole.net"
               giturl="https://github.com/alexanderdouglasbrown/Word-Hole"
               serverurl="https://github.com/alexanderdouglasbrown/Word-Hole-API"
-            >A website for posting your thoughts, links, whatever, and leaving comments. Built with React, ASP .NET Core, and PostgreSQL.
+            >
+              A website for posting your thoughts, links, whatever, and leaving comments. Built with React, ASP .NET Core, and PostgreSQL.
             </Project>
             <Project
               showLightboxCallback={showLightbox}
