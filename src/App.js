@@ -34,7 +34,7 @@ const App = props => {
               name="Alexander D. Brown"
               title="B.S. Computer Science"
               email="alexanderdouglasbrown@gmail.com"
-              resume="https://drive.google.com/open?id=0B30hQOEKn_sUWFViRXkzY0tUb2s"
+              resume="https://drive.google.com/open?id=1mG2RvEwQ_a2byFQQztXR-XhCxnnchWVc"
               github="https://github.com/alexanderdouglasbrown"
               linkedin="https://www.linkedin.com/in/alexanderdouglasbrown/"
               instagram="https://www.instagram.com/glacialtruffle/"
