@@ -8,7 +8,7 @@ const Lightbox = props =>
         onClick={props.hideLightboxCallback}>
             {
                 props.video ?
-                    <video autoPlay loop muted playsInline src={props.video} />
+                    <video autoPlay loop muted playsInline poster={props.image} src={props.video} />
                     :
                     <img src={props.image} alt="" />
             }
