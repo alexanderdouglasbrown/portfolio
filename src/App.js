@@ -57,16 +57,16 @@ const App = props => {
             </Project>
             <Project
               showLightboxCallback={showLightbox}
-              image="images/frend-chat.png"
-              video="videos/frend-chat.mp4"
-              title="Frend Chat"
-              description="A chat room to connect you and your &quot;frends&quot;"
-              url="https://github.com/alexanderdouglasbrown/FrendChat/releases"
-              giturl="https://github.com/alexanderdouglasbrown/FrendChat"
-              serverurl="https://github.com/alexanderdouglasbrown/FrendServer"
+              image="images/friend-chat.png"
+              video="videos/friend-chat.mp4"
+              title="Friend Chat"
+              description="A chat room to connect you and your friends"
+              url="https://github.com/alexanderdouglasbrown/FriendChat/releases"
+              giturl="https://github.com/alexanderdouglasbrown/FriendChat"
+              serverurl="https://github.com/alexanderdouglasbrown/FriendServer"
             >
-              A chat app made in Java and JavaFX. It connects to Frend Server, which is written in C++.
-              Frend Server uses SQLite to store user credentials, while passwords are salted and hashed with SHA256.
+              A chat app made in Java and JavaFX. It connects to Friend Server, which is written in C++.
+              Friend Server uses SQLite to store user credentials, while passwords are salted and hashed with SHA256.
             </Project>
             <Project
               showLightboxCallback={showLightbox}
