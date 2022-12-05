@@ -103,19 +103,6 @@ const App = props => {
             >
               A website for sharing images and leaving comments. Built with Node.js, Express, and MongoDB.
             </Project>
-            <Project
-              showLightboxCallback={showLightbox}
-              image="images/sketchy.png"
-              video="videos/sketchy.mp4"
-              title="Sketchy"
-              description="An online multiplayer Javascript Pictionary game"
-              url="http://csc667.herokuapp.com/"
-              giturl="https://github.com/alexanderdouglasbrown/Sketchy"
-            >
-              Built in my Internet Application Design and Development class using Node.js with Socket.IO.
-              I made the drawing pad, which keeps packet sizes small by sending the artist's mouse movements to other players.
-              I also worked on the client and server game logic, including assigning the host player, scanning the chat room for correct guesses, etc.
-            </Project>
           </div>
         </div>
       </div>
