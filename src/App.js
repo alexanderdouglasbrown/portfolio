@@ -39,7 +39,7 @@ const App = props => {
               linkedin="https://www.linkedin.com/in/alexanderdouglasbrown/"
               instagram="https://www.instagram.com/glacialtruffle/"
             >
-              Hi, my name is Alex. I'm passionate about computers and technology, and have been programming, building, and repairing computers for as long as I can remember.
+              Hi, my name is Alex, and that's my dog Murphy. I'm passionate about computers and technology, and have been programming, building, and repairing computers for as long as I can remember.
               I have a Bachelor of Science in Computer Science from San Francisco State University, and an Associate in Science in CIS Desktop Networking from College of Marin.
               Below are some of my programming projects.
             </Profile>
