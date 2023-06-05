@@ -45,13 +45,13 @@ const App = props => {
             </Profile>
             <Project
               showLightboxCallback={showLightbox}
-              title="Word Hole"
+              title="Word Grove"
               image="images/word-hole.png"
               video="videos/word-hole.mp4"
-              description="A site for sharing words on the internet!"
-              url="https://wordhole.net"
-              giturl="https://github.com/alexanderdouglasbrown/Word-Hole"
-              serverurl="https://github.com/alexanderdouglasbrown/Word-Hole-API"
+              description="A relaxing place to enjoy words on the internet"
+              url="https://wordgrove.net"
+              giturl="https://github.com/alexanderdouglasbrown/Word-Grove"
+              serverurl="https://github.com/alexanderdouglasbrown/Word-Grove-API"
             >
               A website for posting your thoughts, links, whatever, and leaving comments. Built with React, ASP .NET Core, and PostgreSQL.
             </Project>
