@@ -46,8 +46,8 @@ const App = props => {
             <Project
               showLightboxCallback={showLightbox}
               title="Word Grove"
-              image="images/word-hole.png"
-              video="videos/word-hole.mp4"
+              image="images/word-grove.png"
+              video="videos/word-grove.mp4"
               description="A relaxing place to enjoy words on the internet"
               url="https://wordgrove.net"
               giturl="https://github.com/alexanderdouglasbrown/Word-Grove"
