@@ -45,6 +45,17 @@ const App = props => {
             </Profile>
             <Project
               showLightboxCallback={showLightbox}
+              title="Cabin Scene"
+              image="images/cabin-scene.png"
+              video="videos/cabin-scene.mp4"
+              description="A cabin on a flying island"
+              url="https://alexanderdouglasbrown.github.io/Cabin-Scene/"
+              giturl="https://github.com/alexanderdouglasbrown/Cabin-Scene"
+            >
+              A 3D scene created in WebGL2, with WebAssembly (through Rust) for math functions
+            </Project>
+            <Project
+              showLightboxCallback={showLightbox}
               title="Word Grove"
               image="images/word-grove.png"
               video="videos/word-grove.mp4"
