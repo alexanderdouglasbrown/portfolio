@@ -52,19 +52,19 @@ const App = props => {
               url="https://alexanderdouglasbrown.github.io/Cabin-Scene/"
               giturl="https://github.com/alexanderdouglasbrown/Cabin-Scene"
             >
-              A 3D scene created in WebGL2, with WebAssembly (through Rust) for math functions
+              A 3D scene created in WebGL2, with WebAssembly (through Rust) for math functions.
             </Project>
             <Project
               showLightboxCallback={showLightbox}
               title="Word Grove"
               image="images/word-grove.png"
               video="videos/word-grove.mp4"
-              description="A relaxing place to enjoy words on the internet"
+              description="A relaxing place to enjoy words and images on the internet"
               url="https://wordgrove.net"
               giturl="https://github.com/alexanderdouglasbrown/Word-Grove"
               serverurl="https://github.com/alexanderdouglasbrown/Word-Grove-API"
             >
-              A website for posting your thoughts, links, whatever, and leaving comments. Built with React, ASP .NET Core, and PostgreSQL.
+              A website for posting your thoughts, dogs, links, whatever, and leaving comments. Built with React, ASP .NET Core, and PostgreSQL.
             </Project>
             <Project
               showLightboxCallback={showLightbox}
