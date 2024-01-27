@@ -109,7 +109,7 @@ const App = props => {
               video="videos/image-splash.mp4"
               title="Image Splash"
               description="An image sharing website"
-              url="http://www.imagesplash.cool/"
+              url="https://imagesplash.cool/"
               giturl="https://github.com/alexanderdouglasbrown/ImageSplash"
             >
               A website for sharing images and leaving comments. Built with Node.js, Express, and MongoDB.
