@@ -103,17 +103,6 @@ const App = props => {
               A match-three puzzle browser game. Built with another of my projects, <a href="https://github.com/alexanderdouglasbrown/JSGamework">JSGamework</a>,
               which handles the game loop and scales the screen to fit the browser window.
             </Project>
-            <Project
-              showLightboxCallback={showLightbox}
-              image="images/image-splash.png"
-              video="videos/image-splash.mp4"
-              title="Image Splash"
-              description="An image sharing website"
-              url="https://imagesplash.cool/"
-              giturl="https://github.com/alexanderdouglasbrown/ImageSplash"
-            >
-              A website for sharing images and leaving comments. Built with Node.js, Express, and MongoDB.
-            </Project>
           </div>
         </div>
       </div>
